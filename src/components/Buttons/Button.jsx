@@ -1,18 +1,29 @@
 import React from 'react';
 
-function Button (props) {
-console.log(props);
+//function Button (props) {
+//    return (
+//        <button
+//            type={props.type}
+//            onClick={props.onClick}
+//            disabled={props.ondisabled}
+//        >
+//            {props.buttontext}
+//        </button>
+//    );
+//}
+
+//export default Button;
+
+function Button ({type, onClick, ondisabled, buttontext}) {
     return (
         <button
-            type={props.type}
-            onClick={props.onClick}
-            disabled={props.ondisabled}
+            type={type}
+            onClick={onClick}
+            disabled={ondisabled}
         >
-            {props.buttontext}
+            {buttontext}
         </button>
-
     );
 }
-
 
 export default Button;
