@@ -1,13 +1,13 @@
 import React from 'react';
 import trendybag from "../../assets/bag_4.png";
 
-const Product = (props) => {
+const Product = ({isBestSeller, imagebag, title, price}) => {
     return (
         <article>
-            <span>{props.isBestSeller}Best Seller</span>
-            <img src={props.imagebag} alt={props.title}/>
-            <p>{props.title}</p>
-            <h1>{props.price}</h1>
+            <span>{isBestSeller}Best Seller</span>
+            <img src={imagebag} alt={title}/>
+            <p>{title}</p>
+            <h1>{price}</h1>
         </article>
     );
 };
