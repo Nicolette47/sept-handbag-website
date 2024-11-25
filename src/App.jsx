@@ -98,9 +98,7 @@ function App() {
                         facere incidunt molestias nam necessitatibus placeat, quaerat quam recusandae repellendus
                         voluptatum? Officiis.</p>
                 </Section>
-
             </footer>
-
         </>
     )
 }
